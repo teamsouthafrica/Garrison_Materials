@@ -1,0 +1,94 @@
+<HBProfile>
+
+<!-- ###################################################################################################### -->
+<!-- #################### Credit to EchoTiger for original development of this profile #################### -->
+<!-- ############ TeamSA is re-developing this profile to be able to provide quicker updates ############## -->
+<!-- ###################################################################################################### -->
+
+<Name>Nagrand:Draenor, Level 3 Timber Farm</Name>
+
+<MinFreeBagSlots>5</MinFreeBagSlots>
+<MinDurability>.2</MinDurability>
+
+<MailGrey>False</MailGrey>
+<MailWhite>True</MailWhite>
+<MailGreen>False</MailGreen>
+<MailBlue>False</MailBlue>
+<MailPurple>True</MailPurple>
+
+<SellGrey>True</SellGrey>
+<SellWhite>True</SellWhite>
+<SellGreen>True</SellGreen>
+<SellBlue>True</SellBlue>
+<SellPurple>False</SellPurple>
+
+<ProtectedItems>
+</ProtectedItems>
+
+<Vendors>
+</Vendors>
+
+<Mailboxes>
+</Mailboxes>
+
+<AvoidMobs>
+</AvoidMobs>
+
+<Blackspots>
+	<Blackspot X="4005.649" Y="4563.79"  Z="135.9363" Radius="80.63823" /> <!-- Large Timber on Hill -->
+	<Blackspot X="4427.03"  Y="5157.185" Z="268.1728" Radius="10.63823" /> <!-- Small Timber on Waterfall -->
+	<Blackspot X="3034.936" Y="5367.301" Z="118.2727" Radius="10.63823" /> <!-- General open area causing to get stuck at random times -->
+	<Blackspot X="3065.119" Y="5459.518" Z="89.11835" Radius="30" />       <!-- General open area causing to get stuck at random times -->
+	<Blackspot X="2873.102" Y="6109.63"  Z="110.8853" Radius="9.59908" />  <!-- Small Timber on Hill -->
+	<Blackspot X="2602.061" Y="6172.754" Z="93.7818"  Radius="5.211864" /> <!-- Small Timber on Hill -->
+	<Blackspot X="2571.573" Y="6158.937" Z="79.59093" Radius="7.704871" /> <!-- Large Timber on Hill -->
+	<Blackspot X="2426.086" Y="5390.303" Z="145.3224" Radius="4.769608" /> <!-- Timber on Hill -->
+	<Blackspot X="2536.447" Y="5706.371" Z="108.184"  Radius="80.50000" /> <!-- Telaari Station - Faction issues -->
+</Blackspots>
+
+<QuestOrder>
+
+<While Condition="true" >
+	<DisableBehavior Name="Pull" />
+	<If Condition="Me.ZoneId != 6755" >
+		<MoveTo DestName="Nagrand" X="3041.113" Y="4782.185" Z="128.2754" />
+	</If>
+
+	<CustomBehavior File="InteractWith" CollectionDistance="800" AttemptCountMax="1" IgnoreMobsInBlackspots="True" IgnoreLoSToTarget="true" MobId1="234193" MobId2="234194" MobId3="234196" MobId4="234195" WaitForNpcs="false" >
+		<HuntingGrounds WaypointVisitStrategy="Random"  >
+			<Hotspot X="3318.135" Y="4364.583" Z="193.6739" />
+			<Hotspot X="2252.076" Y="5678.254" Z="133.9799" />
+			<Hotspot X="2258.529" Y="5912.058" Z="98.44887" />
+			<Hotspot X="3356.547" Y="4351.089" Z="224.1065" />
+			<Hotspot X="3865.039" Y="4955.741" Z="227.5417" />
+			<Hotspot X="4171.983" Y="4855.271" Z="262.7563" />
+			<Hotspot X="3865.039" Y="4955.741" Z="227.5417" />
+			<Hotspot X="3380.523" Y="5415.537" Z="63.66822" />
+			<Hotspot X="3469.771" Y="5616.788" Z="40.03097" />
+			<Hotspot X="3062.411" Y="5469.17"  Z="81.74711" />
+			<Hotspot X="3293.879" Y="5220.411" Z="70.60076" />
+			<Hotspot X="3293.843" Y="5199.878" Z="79.35218" />
+			<Hotspot X="3665.088" Y="5226.827" Z="50.98374" />
+			<Hotspot X="3469.771" Y="5616.788" Z="40.03097" />
+			<Hotspot X="2992.242" Y="5904.842" Z="89.4444"  />
+			<Hotspot X="2898.921" Y="5969.306" Z="87.17673" />
+			<Hotspot X="3085.016" Y="5023.214" Z="128.6283" />
+			<Hotspot X="3089.45"  Y="6456.491" Z="40.40054" />
+			<Hotspot X="2872.038" Y="6108.632" Z="112.1513" />
+			<Hotspot X="2601.065" Y="6173.477" Z="93.9293"  />
+			<Hotspot X="2441.655" Y="6102.421" Z="81.29241" />
+			<Hotspot X="2519.187" Y="5710.069" Z="116.5205" />
+			<Hotspot X="2072.14"  Y="5597.102" Z="143.3857" />
+			<Hotspot X="2075.122" Y="6235.237" Z="40.15631" />
+			<Hotspot X="2498.243" Y="6368.73"  Z="46.71754" />
+			<Hotspot X="2572.818" Y="6157.852" Z="78.93256" />
+			<Hotspot X="2957.793" Y="5520.575" Z="115.4756" />
+			<Hotspot X="2984.18"  Y="5234.067" Z="105.5433" />
+			<Hotspot X="2822.735" Y="5675.707" Z="83.99576" />
+		</HuntingGrounds>
+		<CustomBehavior File="ForcedMount" />
+	</CustomBehavior>
+
+</While>
+</QuestOrder>
+</HBProfile>
